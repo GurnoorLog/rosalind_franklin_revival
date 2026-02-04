@@ -192,6 +192,7 @@ This project aims to:
 
 **Creator**: Gurnoor Tamber  
 **Project**: Rosalind Franklin Revival  
+**Repository**: [https://github.com/GurnoorLog/rosalind_franklin_revival.git](https://github.com/GurnoorLog/rosalind_franklin_revival.git)  
 **Mission**: Bringing forgotten heroes back to life through technology
 
 ---
