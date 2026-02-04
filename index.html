@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark AI // Neural Link</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=JetBrains+Mono:wght@300;400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyan: #00f7ff;
+            --magenta: #ff00ff;
+            --yellow: #f0f000;
+            --red: #ff003c;
+            --bg: #030303;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: #e0e0e0;
+            font-family: 'Rajdhani', sans-serif;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .font-mono { font-family: 'JetBrains+Mono', monospace; }
+        
+        .crt-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            z-index: 100;
+            background-size: 100% 3px, 3px 100%;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        .hex-grid {
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='%2300f7ff' fill-opacity='0.02' d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9l10.99-6.35L25 17.9v12.7L13.99 36.95 3 30.6V17.9z'/%3E%3C/svg%3E");
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        .clip-tech-r { clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%); }
+        .clip-tech-l { clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%); }
+        .clip-bracket-l { clip-path: polygon(0 0, 100% 0, 100% 2px, 2px 2px, 2px calc(100% - 2px), 100% calc(100% - 2px), 100% 100%, 0 100%); }
+        .clip-bracket-r { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 2px, 0 2px); }
+
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+
+        .animate-float { animation: float 6s ease-in-out infinite; }
+
+        ::-webkit-scrollbar { width: 2px; }
+        ::-webkit-scrollbar-thumb { background: var(--cyan); }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://esm.sh/three@0.172.0",
+    "three/": "https://esm.sh/three@0.172.0/",
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@9.0.0-alpha.8?deps=three@0.172.0,react@19.0.0,react-dom@19.0.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.121.4?deps=three@0.172.0,react@19.0.0,react-dom@19.0.0,@react-three/fiber@9.0.0-alpha.8",
+    "@google/genai": "https://esm.sh/@google/genai@1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class="hex-grid"></div>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

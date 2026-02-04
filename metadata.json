@@ -1,0 +1,9 @@
+{
+  "name": "Rosalind_Franklin_Revival",
+  "description": "Neural reconstruction of Dr. Rosalind Franklin. Particle-based AI avatar specialized in molecular biology and crystallography.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation"
+  ]
+}
