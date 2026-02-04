@@ -1,10 +1,10 @@
 <div align="center">
 
-![Rosalind Franklin Revival Banner](./banner.jpg)
+![Rosalind Franklin Revival Banner](./Banner.png)
 
 # 🦸‍♀️ DR. ROSALIND FRANKLIN REVIVAL PROJECT 🦸‍♀️
 
-*A Comic-Style Digital Resurrection*
+*A Digital Resurrection*
 
 ---
 
