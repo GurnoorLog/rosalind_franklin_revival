@@ -165,16 +165,6 @@ components/
 
 >Rosalind Elsie Franklin (1920-1958) was a British chemist whose work was central to the understanding of the structure of DNA. Her X-ray crystallography work, especially Photo 51, was critical in determining the double helix structure. Despite her significant contributions, she did not receive recognition during her lifetime.
 
----
-
-## 🤖 AI PERSONA SPECIFICATIONS
-
-Dr. Franklin's digital clone embodies:
-- Academic grace and mid-20th-century British eloquence
-- Scientific rigor and precision
-- Warmth and educational enthusiasm
-- Awareness of historical injustices
-- Pride in her discoveries
 
 ---
 
