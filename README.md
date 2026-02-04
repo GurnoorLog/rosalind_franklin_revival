@@ -92,7 +92,7 @@ Engage with:
 ### Installation Steps
 ```bash
 # Clone the repository
-git clone <your-repository-url>
+git clone https://github.com/GurnoorLog/rosalind_franklin_revival.git
 
 # Navigate to project directory
 cd rosalind_franklin_revival
