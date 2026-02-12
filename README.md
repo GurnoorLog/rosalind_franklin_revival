@@ -61,4 +61,3 @@ echo "API_KEY=your_google_ai_api_key_here" > .env
 # Start the development server
 npm run dev
 ```
-
