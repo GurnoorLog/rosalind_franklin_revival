@@ -4,8 +4,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // *VIDEO PATHS* Backup locations for our epic video! 🎥
-const PRIMARY_VIDEO_SRC = './components/In_the_photo_1080p_202512311833.mp4';
-const SECONDARY_VIDEO_SRC = './In_the_photo_1080p_202512311833.mp4';
+const PRIMARY_VIDEO_SRC = './components/video1.mp4';
+const SECONDARY_VIDEO_SRC = './video1.mp4';
 
 interface CinematicIntroProps {
   onComplete: () => void;
