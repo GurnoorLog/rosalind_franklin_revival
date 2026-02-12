@@ -168,13 +168,13 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
 
       {/* Stage: BOOTING */}
       {stage === 'BOOT' && (
-        <div className="flex flex-col items-center gap-6 animate-in fade-in zoom-in-95 duration-700">
-           <div className="relative w-40 h-40 flex items-center justify-center">
+        <div className="flex flex-col items-center gap-4 animate-in fade-in zoom-in-95 duration-700">
+           <div className="relative w-28 h-28 flex items-center justify-center">
               <div className="absolute inset-0 border border-cyan-500/20 rotate-45 animate-[spin_10s_linear_infinite]"></div>
-              <div className="absolute inset-4 border border-cyan-500/40 -rotate-12 animate-[spin_6s_linear_infinite_reverse]"></div>
-              <div className="w-2 h-2 bg-cyan-400 shadow-[0_0_20px_cyan]"></div>
+              <div className="absolute inset-2 border border-cyan-500/40 -rotate-12 animate-[spin_6s_linear_infinite_reverse]"></div>
+              <div className="w-1.5 h-1.5 bg-cyan-400 shadow-[0_0_15px_cyan]"></div>
            </div>
-           <span className="text-[10px] font-black tracking-[1.5em] text-cyan-500 uppercase animate-pulse">DECRYPTING_MEMORY_FRAGMENT_0x51</span>
+           <span className="text-[8px] font-black tracking-[1.2em] text-cyan-500 uppercase animate-pulse">DECRYPTING_MEMORY_FRAGMENT_0x51</span>
         </div>
       )}
 
@@ -185,15 +185,15 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
           <div className="relative w-full max-w-6xl aspect-video border border-white/5 bg-black shadow-[0_0_120px_rgba(0,0,0,1)] overflow-hidden">
             {/* Technical HUD Overlays */}
             <div className="absolute inset-0 pointer-events-none z-10">
-               <div className="absolute top-8 left-8 flex flex-col gap-2">
-                  <div className="flex items-center gap-3">
-                     <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></div>
-                     <span className="text-[8px] font-black text-cyan-400 tracking-widest uppercase italic">LIVE_FEED // DNA_ARCHIVE_0x1953</span>
+               <div className="absolute top-6 left-6 flex flex-col gap-1.5">
+                  <div className="flex items-center gap-2">
+                     <div className="w-1 h-1 bg-cyan-500 rounded-full animate-pulse"></div>
+                     <span className="text-[6px] font-black text-cyan-400 tracking-widest uppercase italic">LIVE_FEED // DNA_ARCHIVE_0x1953</span>
                   </div>
-                  <div className="h-[1px] w-32 bg-gradient-to-r from-cyan-500/40 to-transparent"></div>
+                  <div className="h-[1px] w-24 bg-gradient-to-r from-cyan-500/40 to-transparent"></div>
                </div>
-               <div className="absolute bottom-8 left-8">
-                  <span className="text-[7px] font-mono text-cyan-900 uppercase">LATENCY: 14ms // BITRATE: 48Mbps // SIGNAL: STABLE</span>
+               <div className="absolute bottom-6 left-6">
+                  <span className="text-[5px] font-mono text-cyan-900 uppercase">LATENCY: 14ms // BITRATE: 48Mbps // SIGNAL: STABLE</span>
                </div>
             </div>
 

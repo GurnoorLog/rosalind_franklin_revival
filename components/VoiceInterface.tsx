@@ -518,7 +518,7 @@ export const VoiceInterface: React.FC<VoiceInterfaceProps> = ({
         <>
           {/* CAMERA FEED (RIGHT SIDE, VERTICALLY CENTERED WITH BADGE) */}
           <div className="fixed right-12 top-1/2 -translate-y-1/2 z-50 pointer-events-none animate-in slide-in-from-right duration-700">
-            <div className={`relative w-72 h-48 bg-black/60 backdrop-blur-2xl border-[1px] shadow-2xl overflow-hidden transition-all duration-500 ${isVisionActuallyActive ? 'border-cyan-500/60' : 'border-red-500/20'}`} 
+            <div className={`relative w-56 h-36 bg-black/60 backdrop-blur-2xl border-[1px] shadow-xl overflow-hidden transition-all duration-500 ${isVisionActuallyActive ? 'border-cyan-500/60' : 'border-red-500/20'}`}
                  style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 30%)' }}>
               
               <div className="absolute top-2 right-4 z-10 flex items-center gap-2">
@@ -556,7 +556,7 @@ export const VoiceInterface: React.FC<VoiceInterfaceProps> = ({
 
           {/* INLINE GROUNDING SOURCES DISPLAY */}
           {groundingSources.length > 0 && (
-            <div className="fixed right-12 bottom-32 z-50 w-72 max-h-[40vh] overflow-y-auto pointer-events-auto bg-black/80 backdrop-blur-3xl border-r-2 border-cyan-500 p-4 space-y-4 animate-in slide-in-from-right duration-500"
+            <div className="fixed right-8 bottom-24 z-50 w-56 max-h-[30vh] overflow-y-auto pointer-events-auto bg-black/80 backdrop-blur-3xl border-r-2 border-cyan-500 p-3 space-y-3 animate-in slide-in-from-right duration-500"
                  style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)' }}>
               <div className="flex items-center gap-2 border-b border-cyan-500/20 pb-2">
                  <div className="w-1.5 h-1.5 bg-cyan-400 rotate-45"></div>
@@ -575,7 +575,7 @@ export const VoiceInterface: React.FC<VoiceInterfaceProps> = ({
 
           {/* AI BADGE (LEFT, VERTICALLY CENTERED) */}
           <div className="fixed left-12 top-1/2 -translate-y-1/2 z-50 pointer-events-none animate-in slide-in-from-left duration-700">
-            <div className="relative w-64 h-64 bg-black/60 backdrop-blur-xl border-r-[3px] border-cyan-500 shadow-2xl overflow-hidden" 
+            <div className="relative w-48 h-48 bg-black/60 backdrop-blur-xl border-r-[2px] border-cyan-500 shadow-xl overflow-hidden"
                  style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%)' }}>
               <img 
                 src="rosa_badge.jpeg" 

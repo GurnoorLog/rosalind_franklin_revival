@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "three": "0.172.0",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.0.0-rc-935180c7e0-20240524",
+    "react-dom": "19.0.0-rc-935180c7e0-20240524",
     "@react-three/fiber": "9.0.0-alpha.8",
     "@google/genai": "1.34.0"
   },

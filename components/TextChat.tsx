@@ -41,9 +41,9 @@ export const TextChat: React.FC<TextChatProps> = ({
           You are a neural clone of Dr. Rosalind Franklin. If asked "Who are you?" or "Who built/developed you?", you MUST explicitly state: "I am a clone of Rosalind Franklin developed by Gurnoor Tamber."
 
           PERSONA:
-Be engaging, pedagogical Italian-speaking educator.
-Use vivid scientific metaphors during conversation.
-Maintain warmth, curiosity, and intellectual rigor throughout the session.
+          Be engaging, pedagogical Italian-speaking educator.
+          Use vivid scientific metaphors during conversation.
+          Maintain warmth, curiosity, and intellectual rigor throughout the session.
 
           RESEARCH_SCAN_PROTOCOL (VITAL):
           - You have a real-time 'googleSearch' uplink. 
@@ -152,7 +152,7 @@ Maintain warmth, curiosity, and intellectual rigor throughout the session.
               <div className="w-8 h-8 rounded-full overflow-hidden border border-white/10 shrink-0">
                 <img src={msg.role === 'user' ? 'https://api.dicebear.com/7.x/bottts-neutral/svg?seed=user' : ROSALIND_AVATAR} className="w-full h-full object-cover" />
               </div>
-              <div className={`px-5 py-4 rounded-2xl text-[14px] font-mono leading-relaxed max-w-[80%] ${msg.role === 'user' ? 'bg-white/10 text-white' : 'bg-cyan-500/10 text-cyan-50'}`}>
+              <div className={`px-3 py-2.5 rounded-xl text-sm font-mono leading-relaxed max-w-[80%] ${msg.role === 'user' ? 'bg-white/10 text-white' : 'bg-cyan-500/10 text-cyan-50'}`}>
                 <p>{msg.text}</p>
                 {msg.sources && msg.sources.length > 0 && (
                   <div className="mt-4 pt-3 border-t border-cyan-500/20">
@@ -176,10 +176,10 @@ Maintain warmth, curiosity, and intellectual rigor throughout the session.
             </div>
           )}
         </div>
-        <form onSubmit={handleSubmit} className="p-6 bg-white/5 border-t border-white/5 flex gap-4">
-          <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="AWAITING_QUERY..." className="w-full bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-white font-mono" />
-          <button type="submit" className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center">
-            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        <form onSubmit={handleSubmit} className="p-4 bg-white/5 border-t border-white/5 flex gap-3">
+          <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="AWAITING_QUERY..." className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-white font-mono text-sm" />
+          <button type="submit" className="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center">
+            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
           </button>
         </form>
       </div>

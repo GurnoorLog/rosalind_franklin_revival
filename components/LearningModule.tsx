@@ -252,11 +252,11 @@ export const LearningModule: React.FC<LearningModuleProps> = ({ onBack }) => {
             <div className="w-2 h-10 bg-cyan-400 shadow-[0_0_15px_cyan]"></div>
             <div className="flex flex-col">
               <h2 className="text-2xl font-black tracking-[0.2em] text-white italic drop-shadow-[0_0_10px_cyan]">ARCHIVE_v6.5</h2>
-              <span className="text-[9px] font-mono tracking-[0.6em] text-cyan-600 uppercase font-black">NEURAL_LINK: SECURE</span>
+              <span className="text-[7px] font-mono tracking-[0.5em] text-cyan-600 uppercase font-black">NEURAL_LINK: SECURE</span>
             </div>
           </div>
         </div>
-        <button onClick={onBack} className="group relative px-10 py-3 border-2 border-white/40 hover:border-white transition-all bg-black/40 italic font-black text-[11px] tracking-widest text-white" style={{ clipPath: 'polygon(0 0, 90% 0, 100% 30%, 100% 100%, 10% 100%, 0 70%)' }}>
+        <button onClick={onBack} className="group relative px-6 py-1.5 border border-white/40 hover:border-white transition-all bg-black/40 italic font-black text-[8px] tracking-widest text-white" style={{ clipPath: 'polygon(0 0, 90% 0, 100% 30%, 100% 100%, 10% 100%, 0 70%)' }}>
           BACK_TO_CORE
         </button>
       </div>
@@ -292,7 +292,7 @@ export const LearningModule: React.FC<LearningModuleProps> = ({ onBack }) => {
                     <circle cx="50%" cy="50%" r="45%" fill="none" stroke="rgba(0,247,255,0.05)" strokeWidth="8" />
                     <circle cx="50%" cy="50%" r="45%" fill="none" stroke="cyan" strokeWidth="6" strokeDasharray="283" strokeDashoffset={283 - (283 * decryptionProgress / 100)} className="drop-shadow-[0_0_20px_cyan]" />
                   </svg>
-                  <div className="absolute inset-0 flex items-center justify-center text-4xl font-black italic text-white">{decryptionProgress}%</div>
+                  <div className="absolute inset-0 flex items-center justify-center text-2xl font-black italic text-white">{decryptionProgress}%</div>
                </div>
                <div className="space-y-2 text-center">
                   <span className="text-[12px] font-black tracking-[1em] text-cyan-400 animate-pulse uppercase">SYNCHRONIZING_NODE</span>
@@ -320,7 +320,7 @@ export const LearningModule: React.FC<LearningModuleProps> = ({ onBack }) => {
                        <span className="bg-white text-black px-6 py-1 text-[11px] font-black italic shadow-[0_0_15px_white]">{activeNode.year}</span>
                        <span className="text-cyan-800 text-[10px] font-black tracking-widest uppercase">{activeNode.context}</span>
                     </div>
-                    <h1 className="text-5xl font-black text-white italic tracking-tighter uppercase drop-shadow-[0_0_20px_rgba(0,247,255,0.4)]">{activeNode.title}</h1>
+                    <h1 className="text-3xl font-black text-white italic tracking-tighter uppercase drop-shadow-[0_0_20px_rgba(0,247,255,0.4)]">{activeNode.title}</h1>
                  </div>
                  <div className="px-5 py-1 border-2 border-cyan-500 text-cyan-400 text-sm font-black italic tracking-widest">{activeNode.id}</div>
               </div>

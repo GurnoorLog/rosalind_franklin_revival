@@ -28,22 +28,22 @@ const MenuOption: React.FC<{
     </div>
     
     {/* SAO Menu Button Shape */}
-    <div className="relative flex items-center gap-5 px-8 py-4 min-w-[320px] bg-gradient-to-r from-black/80 to-black/40 backdrop-blur-md border-l-[5px] border-white/40 group-hover:border-cyan-400 group-hover:from-cyan-500/20 group-hover:to-transparent transition-all"
+    <div className="relative flex items-center gap-3 px-5 py-2.5 min-w-[220px] bg-gradient-to-r from-black/80 to-black/40 backdrop-blur-md border-l-[3px] border-white/40 group-hover:border-cyan-400 group-hover:from-cyan-500/20 group-hover:to-transparent transition-all"
          style={{ clipPath: 'polygon(0 0, 95% 0, 100% 25%, 100% 100%, 5% 100%, 0 75%)' }}>
       
       {/* Icon Frame - SAO Diamond Style */}
-      <div className="relative z-10 w-12 h-12 flex items-center justify-center bg-white/5 border border-white/20 group-hover:border-cyan-400 group-hover:bg-cyan-400/20 transition-all rotate-45">
+      <div className="relative z-10 w-8 h-8 flex items-center justify-center bg-white/5 border border-white/20 group-hover:border-cyan-400 group-hover:bg-cyan-400/20 transition-all rotate-45">
          <div className="-rotate-45 text-white group-hover:text-cyan-400 transition-colors">
-           {React.cloneElement(icon as React.ReactElement<any>, { className: "w-6 h-6 fill-current" })}
+           {React.cloneElement(icon as React.ReactElement<any>, { className: "w-4 h-4 fill-current" })}
          </div>
       </div>
 
       {/* Label Group */}
       <div className="flex flex-col items-start z-10">
-        <h2 className="text-xl font-black italic tracking-[0.15em] text-white uppercase group-hover:text-cyan-400 transition-colors font-orbitron">
+        <h2 className="text-base font-black italic tracking-[0.15em] text-white uppercase group-hover:text-cyan-400 transition-colors font-orbitron">
           {label}
         </h2>
-        <span className="text-[8px] font-mono text-white/40 uppercase tracking-[0.3em] font-bold group-hover:text-cyan-700 transition-colors">
+        <span className="text-[6px] font-mono text-white/40 uppercase tracking-[0.3em] font-bold group-hover:text-cyan-700 transition-colors">
           {sub}
         </span>
       </div>
@@ -81,16 +81,16 @@ export const SAODashboard: React.FC<SAODashboardProps> = ({ onSelect }) => {
       {/* PLAYER STATUS BAR (Top Left) - Cleaned as per request */}
       <div className="absolute top-12 left-12 flex flex-col gap-2 animate-in slide-in-from-top-10 duration-700">
          {/* Name Only */}
-         <div className="flex items-end gap-3 mb-1">
-            <div className="bg-white px-6 py-1 skew-x-[-20deg] shadow-[0_0_25px_rgba(255,255,255,0.3)]">
-               <span className="block skew-x-[20deg] text-black text-[11px] font-black italic tracking-[0.25em]">ROSALIND_FRANKLIN</span>
+         <div className="flex items-end gap-2 mb-1">
+            <div className="bg-white px-4 py-0.5 skew-x-[-20deg] shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+               <span className="block skew-x-[20deg] text-black text-[9px] font-black italic tracking-[0.25em]">ROSALIND_FRANKLIN</span>
             </div>
             {/* Removed LV. 99 */}
          </div>
          
          {/* Progress Bar Only */}
-         <div className="flex items-center gap-3">
-            <div className="relative w-96 h-3 bg-black/60 border border-white/10 skew-x-[-20deg] overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+         <div className="flex items-center gap-2">
+            <div className="relative w-64 h-2.5 bg-black/60 border border-white/10 skew-x-[-20deg] overflow-hidden shadow-[0_0_10px_rgba(0,0,0,0.5)]">
                {/* HP/Sync Bar */}
                <div className="absolute inset-0 bg-gradient-to-r from-green-500/80 to-green-400 transition-all duration-1000 shadow-[0_0_10px_rgba(74,222,128,0.5)]" style={{ width: `${percent}%` }}></div>
                {/* Shimmer Effect */}
@@ -100,18 +100,18 @@ export const SAODashboard: React.FC<SAODashboardProps> = ({ onSelect }) => {
          </div>
          
          {/* Secondary Stat Line */}
-         <div className="flex items-center gap-4 mt-1 opacity-30">
-            <div className="w-48 h-[1px] bg-gradient-to-r from-cyan-500 via-cyan-500/30 to-transparent"></div>
-            <span className="text-[7px] font-mono text-cyan-400 tracking-[0.5em] uppercase font-bold">NEURAL_STABILITY: OPTIMAL</span>
+         <div className="flex items-center gap-3 mt-1 opacity-30">
+            <div className="w-32 h-[1px] bg-gradient-to-r from-cyan-500 via-cyan-500/30 to-transparent"></div>
+            <span className="text-[6px] font-mono text-cyan-400 tracking-[0.5em] uppercase font-bold">NEURAL_STABILITY: OPTIMAL</span>
          </div>
       </div>
 
       {/* MAIN VERTICAL MENU */}
       <div className="relative z-20 flex flex-col pt-20">
-        <div className="mb-10 space-y-2 animate-in slide-in-from-left-10 duration-500">
-           <div className="flex items-center gap-3">
-              <div className="w-8 h-[2px] bg-cyan-500"></div>
-              <span className="text-[9px] font-black tracking-[1.5em] text-cyan-500 uppercase italic">MAIN_MENU</span>
+        <div className="mb-6 space-y-1.5 animate-in slide-in-from-left-10 duration-500">
+           <div className="flex items-center gap-2">
+              <div className="w-6 h-[1.5px] bg-cyan-500"></div>
+              <span className="text-[7px] font-black tracking-[1.2em] text-cyan-500 uppercase italic">MAIN_MENU</span>
            </div>
         </div>
 
@@ -154,11 +154,11 @@ export const SAODashboard: React.FC<SAODashboardProps> = ({ onSelect }) => {
       </div>
 
       {/* FOOTER METADATA */}
-      <div className="absolute bottom-12 left-12 flex items-center gap-8 opacity-20">
-         <div className="w-[1px] h-12 bg-gradient-to-t from-white to-transparent"></div>
-         <div className="flex flex-col gap-1">
-            <span className="text-[8px] font-mono text-white tracking-[0.8em] uppercase font-black">SYSTEM_AUTH: OVERRIDE_ACTIVE</span>
-            <span className="text-[6px] font-mono text-white/50 tracking-[0.4em] uppercase">UID: 0xF51_DNA_CORE_v6</span>
+      <div className="absolute bottom-8 left-8 flex items-center gap-6 opacity-20">
+         <div className="w-[1px] h-8 bg-gradient-to-t from-white to-transparent"></div>
+         <div className="flex flex-col gap-0.5">
+            <span className="text-[6px] font-mono text-white tracking-[0.6em] uppercase font-black">SYSTEM_AUTH: OVERRIDE_ACTIVE</span>
+            <span className="text-[5px] font-mono text-white/50 tracking-[0.3em] uppercase">UID: 0xF51_DNA_CORE_v6</span>
          </div>
       </div>
 
